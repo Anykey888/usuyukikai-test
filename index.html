@@ -15,7 +15,7 @@ a{color:#285b70}
 .hero:before,.hero:after{content:"";position:absolute;left:-5%;right:-5%;height:160px;bottom:0;clip-path:polygon(0 100%,0 75%,18% 20%,30% 64%,46% 5%,64% 65%,78% 25%,100% 75%,100% 100%);background:#1e3f4d;opacity:.72}
 .hero:after{height:115px;background:#365d63;opacity:.9;clip-path:polygon(0 100%,0 70%,22% 35%,38% 75%,57% 20%,75% 65%,90% 30%,100% 60%,100% 100%)}
 .hero-inner{position:relative;z-index:1;max-width:900px;margin:auto}
-.flower{font-size:25px;color:#f5f0dc;letter-spacing:.25em}
+.flower{display:flex;justify-content:center;align-items:center;margin:0 auto 8px}.edelweiss{width:68px;height:68px;filter:drop-shadow(0 2px 2px #254b5b66)}
 h1{font-size:clamp(2.4rem,7vw,4.4rem);letter-spacing:.18em;margin:8px 0 2px;font-weight:600}
 .school{font-size:clamp(.95rem,2.5vw,1.2rem);letter-spacing:.04em;margin:0}
 .catch{font-size:1.05rem;margin:20px 0 0}
@@ -44,7 +44,19 @@ footer p{margin:3px}
 <body>
 <header class="hero" id="home">
   <div class="hero-inner">
-    <div class="flower" aria-hidden="true">✳　薄雪草　✳</div>
+    <div class="flower" aria-label="薄雪草の花のイラスト">
+      <svg class="edelweiss" viewBox="0 0 100 100" role="img" aria-label="薄雪草の花">
+        <g fill="#fffdf2" stroke="#d8d0ad" stroke-width="1.2">
+          <ellipse cx="50" cy="27" rx="10" ry="23"/>
+          <ellipse cx="50" cy="27" rx="10" ry="23" transform="rotate(45 50 50)"/>
+          <ellipse cx="50" cy="27" rx="10" ry="23" transform="rotate(90 50 50)"/>
+          <ellipse cx="50" cy="27" rx="10" ry="23" transform="rotate(135 50 50)"/>
+        </g>
+        <circle cx="50" cy="50" r="13" fill="#d8c57b"/>
+        <circle cx="46" cy="47" r="2" fill="#8b7740"/><circle cx="54" cy="47" r="2" fill="#8b7740"/>
+        <circle cx="50" cy="54" r="2" fill="#8b7740"/><circle cx="44" cy="53" r="1.5" fill="#8b7740"/><circle cx="56" cy="53" r="1.5" fill="#8b7740"/>
+      </svg>
+    </div>
     <h1>薄 雪 会</h1>
     <p class="school">神奈川県立湘友高等学校 山岳部 OB・OG会</p>
     <p class="catch">山は変わらず、仲間も変わらず。<br>世代を超えて心をつなぐ、薄雪会。</p>
@@ -65,6 +77,11 @@ footer p{margin:3px}
     <h2>薄雪会について</h2>
     <p class="intro">薄雪会は、神奈川県立湘友高等学校 山岳部の OB・OG が、山の思い出と仲間とのつながりを大切にする会です。</p>
     <p>世代を越えて交流し、現役山岳部の活動を見守りながら、山を通じた縁を次の世代へつないでいきます。</p>
+  </section>
+  <section id="greeting">
+    <p class="kicker">Message from the President</p>
+    <h2>会長挨拶</h2>
+    <p class="intro">会長のOです。今までの伝統を受け継ぎ、時代に即した薄雪会にします！よろしく。</p>
   </section>
   <section id="news">
     <p class="kicker">News</p>
@@ -91,8 +108,7 @@ footer p{margin:3px}
     <p class="kicker">Looking ahead</p>
     <h2>創立80周年に向けて</h2>
     <div class="anniversary">
-      <strong>2028年、薄雪会は節目の年を迎えます。</strong>
-      <p>これまでの歩みを振り返り、世代を越えたつながりを深める機会にできるよう、準備を進めていきます。</p>
+      <strong>2031年11月に〇〇にて、盛大に開催します。</strong>
     </div>
   </section>
   <section id="contact">
