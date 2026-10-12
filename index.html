@@ -1,71 +1,110 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="ja">
-
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="神奈川県立湘友高等学校 山岳部 OB・OG会「薄雪会」のホームページです。">
 <title>薄雪会｜神奈川県立湘友高等学校 山岳部 OB・OG会</title>
-
 <style>
-
-*{
-
-    margin:0;
-
-    padding:0;
-
-    box-sizing:border-box;
-
-}
-
-body{
-
-    font-family:"Yu Gothic","Hiragino Sans",sans-serif;
-
-    line-height:1.8;
-
-    background:#f5f8fc;
-
-    color:#333;
-
-}
-
-header{
-
-    background:line
-
-
+:root{--navy:#18364a;--green:#42695a;--pale:#f3f6f3;--ink:#25323a;--muted:#5c6b70;--gold:#c6ad78}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;line-height:1.85;color:var(--ink);background:#fff}
+a{color:#285b70}
+.hero{position:relative;overflow:hidden;padding:68px 20px 76px;text-align:center;color:#fff;background:linear-gradient(180deg,#dce8e7 0%,#a9c5c6 43%,#547d83 44%,#254b5b 100%)}
+.hero:before,.hero:after{content:"";position:absolute;left:-5%;right:-5%;height:160px;bottom:0;clip-path:polygon(0 100%,0 75%,18% 20%,30% 64%,46% 5%,64% 65%,78% 25%,100% 75%,100% 100%);background:#1e3f4d;opacity:.72}
+.hero:after{height:115px;background:#365d63;opacity:.9;clip-path:polygon(0 100%,0 70%,22% 35%,38% 75%,57% 20%,75% 65%,90% 30%,100% 60%,100% 100%)}
+.hero-inner{position:relative;z-index:1;max-width:900px;margin:auto}
+.flower{font-size:25px;color:#f5f0dc;letter-spacing:.25em}
+h1{font-size:clamp(2.4rem,7vw,4.4rem);letter-spacing:.18em;margin:8px 0 2px;font-weight:600}
+.school{font-size:clamp(.95rem,2.5vw,1.2rem);letter-spacing:.04em;margin:0}
+.catch{font-size:1.05rem;margin:20px 0 0}
+nav{background:var(--navy);position:relative;z-index:2}
+nav ul{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;gap:0;margin:0;padding:0 12px}
+nav a{display:block;color:#fff;text-decoration:none;padding:13px 18px;font-size:.95rem}
+nav a:hover,nav a:focus{background:#31576a}
+main{max-width:980px;margin:auto;padding:30px 22px 60px}
+section{padding:28px 0 32px;scroll-margin-top:16px}
+section+section{border-top:1px solid #e2e8e5}
+.kicker{font-size:.78rem;letter-spacing:.18em;color:var(--green);font-weight:bold;text-transform:uppercase;margin:0 0 2px}
+h2{font-size:1.65rem;color:var(--navy);margin:0 0 12px}
+p{margin:8px 0}
+.intro{font-size:1.06rem}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:var(--pale);padding:18px 20px;border-radius:8px;border-left:3px solid var(--green)}
+.card h3{margin:0 0 5px;color:var(--navy);font-size:1.1rem}
+.note{font-size:.9rem;color:var(--muted)}
+.anniversary{background:#f5f2e9;border-radius:10px;padding:22px;margin-top:8px}
+.anniversary strong{color:#745f32;font-size:1.15rem}
+footer{background:#18364a;color:#e9f0ef;text-align:center;padding:25px 18px;font-size:.88rem}
+footer p{margin:3px}
+@media(max-width:620px){.hero{padding:48px 16px 60px}nav a{padding:10px 11px;font-size:.88rem}.cards{grid-template-columns:1fr}main{padding:20px 18px 42px}section{padding:24px 0}}
 </style>
-
 </head>
-
 <body>
-
-<header>
-
-<h1>薄 雪 会</h1>
-
-<h2>神奈川県立湘友高等学校 山岳部 OB・OG会</h2>
-
-<div class="catch">
-
-山は変わらず、仲間も変わらず。<br>
-
-世代を超えて心をつなぐ、薄雪会。
-
-</div>
-
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <div class="flower" aria-hidden="true">✳　薄雪草　✳</div>
+    <h1>薄 雪 会</h1>
+    <p class="school">神奈川県立湘友高等学校 山岳部 OB・OG会</p>
+    <p class="catch">山は変わらず、仲間も変わらず。<br>世代を超えて心をつなぐ、薄雪会。</p>
+  </div>
 </header>
-
-<nav>
-
-<ul>
-
-<li><a href="#">ホーム</a></li>
-
-<li><a href="#">薄雪会について</a></li>
-
+<nav aria-label="メインメニュー">
+  <ul>
+    <li><a href="#about">薄雪会について</a></li>
+    <li><a href="#news">お知らせ</a></li>
+    <li><a href="#activities">活動・山行報告</a></li>
+    <li><a href="#archive">会報「薄雪」</a></li>
+    <li><a href="#contact">お問い合わせ</a></li>
+  </ul>
+</nav>
+<main>
+  <section id="about">
+    <p class="kicker">About us</p>
+    <h2>薄雪会について</h2>
+    <p class="intro">薄雪会は、神奈川県立湘友高等学校 山岳部の OB・OG が、山の思い出と仲間とのつながりを大切にする会です。</p>
+    <p>世代を越えて交流し、現役山岳部の活動を見守りながら、山を通じた縁を次の世代へつないでいきます。</p>
+  </section>
+  <section id="news">
+    <p class="kicker">News</p>
+    <h2>お知らせ</h2>
+    <div class="card">
+      <h3>薄雪会ホームページを準備中です</h3>
+      <p>今後、会からのお知らせや行事の案内をこちらに掲載していきます。</p>
+      <p class="note">※掲載内容は事務局で順次更新します。</p>
+    </div>
+  </section>
+  <section id="activities">
+    <p class="kicker">Mountains & Activities</p>
+    <h2>活動・山行報告</h2>
+    <p>OB・OG の山行や交流行事、現役山岳部の活動などを紹介するコーナーです。</p>
+    <p class="note">記事や写真は、準備ができたものから掲載します。</p>
+  </section>
+  <section id="archive">
+    <p class="kicker">Archive</p>
+    <h2>会報「薄雪」</h2>
+    <p>これまで発行してきた会報「薄雪」や、記念誌・活動資料などを順次整理して掲載する予定です。</p>
+    <p class="note">※公開準備中です。掲載資料は確認のうえ追加します。</p>
+  </section>
+  <section id="anniversary">
+    <p class="kicker">Looking ahead</p>
+    <h2>創立80周年に向けて</h2>
+    <div class="anniversary">
+      <strong>2028年、薄雪会は節目の年を迎えます。</strong>
+      <p>これまでの歩みを振り返り、世代を越えたつながりを深める機会にできるよう、準備を進めていきます。</p>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="kicker">Contact</p>
+    <h2>お問い合わせ</h2>
+    <p>ホームページへの掲載内容や会への連絡については、薄雪会事務局までお問い合わせください。</p>
+    <p class="note">※公開用の連絡先は、事務局で確認後に掲載します。</p>
+  </section>
+</main>
+<footer>
+  <p>薄雪会｜神奈川県立湘友高等学校 山岳部 OB・OG会</p>
+  <p>山の思い出と仲間のつながりを、次の世代へ。</p>
+</footer>
+</body>
+</html>
