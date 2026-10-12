@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>薄雪会｜神奈川県立湘友高等学校 山岳部 OB・OG会</title>
+
+<style>
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+body{
+
+    font-family:"Yu Gothic","Hiragino Sans",sans-serif;
+
+    line-height:1.8;
+
+    background:#f5f8fc;
+
+    color:#333;
+
+}
+
+header{
+
+    background:line
+
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>薄 雪 会</h1>
+
+<h2>神奈川県立湘友高等学校 山岳部 OB・OG会</h2>
+
+<div class="catch">
+
+山は変わらず、仲間も変わらず。<br>
+
+世代を超えて心をつなぐ、薄雪会。
+
+</div>
+
+</header>
+
+<nav>
+
+<ul>
+
+<li><a href="#">ホーム</a></li>
+
+<li><a href="#">薄雪会について</a></li>
