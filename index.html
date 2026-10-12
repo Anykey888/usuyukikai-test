@@ -26,6 +26,13 @@ nav a:hover,nav a:focus{background:#31576a}
 main{max-width:980px;margin:auto;padding:30px 22px 60px}
 section{padding:28px 0 32px;scroll-margin-top:16px}
 section+section{border-top:1px solid #e2e8e5}
+.activity-table-wrap{overflow-x:auto;margin-top:14px;border:1px solid #cfd8d5;border-radius:5px}
+.activity-table{width:100%;border-collapse:collapse;font-size:.94rem}
+.activity-table th,.activity-table td{padding:9px 11px;text-align:left;vertical-align:top;border-bottom:1px solid #e2e8e5}
+.activity-table th{background:#f3f6f3;color:#18364a;font-weight:700;white-space:nowrap}
+.activity-table tr:last-child td{border-bottom:0}
+.activity-table td:first-child{white-space:nowrap}
+@media(max-width:620px){.activity-table{font-size:.85rem}.activity-table th,.activity-table td{padding:8px}}
 .kicker{font-size:.78rem;letter-spacing:.18em;color:var(--green);font-weight:bold;text-transform:uppercase;margin:0 0 2px}
 h2{font-size:1.65rem;color:var(--navy);margin:0 0 12px}
 p{margin:8px 0}
@@ -86,7 +93,7 @@ footer p{margin:3px}
   <section id="greeting">
     <p class="kicker">Message from the President</p>
     <h2>会長挨拶</h2>
-    <p class="intro">会長のOです。今までの伝統を受け継ぎ、時代に即した薄雪会にします！よろしく。</p>
+    <p class="intro">全世代の参加を目指す、SNS時代を踏まえた情報共有を図る、創部80周年（2028年）記念事業、OB・OG山行、会報誌「薄雪」の発行（記録の整備を含む）などを実行したい。</p>
   </section>
   <section id="news">
     <p class="kicker">News</p>
@@ -100,8 +107,26 @@ footer p{margin:3px}
   <section id="activities">
     <p class="kicker">Mountains & Activities</p>
     <h2>活動・山行報告</h2>
-    <p>OB・OG の山行や交流行事、現役山岳部の活動などを紹介するコーナーです。</p>
-    <p class="note">記事や写真は、準備ができたものから掲載します。</p>
+    <p>薄雪会の主な活動報告</p>
+    <div class="activity-table-wrap">
+      <table class="activity-table">
+        <thead><tr><th>年月</th><th>活動内容</th><th>場所・備考</th></tr></thead>
+        <tbody>
+          <tr><td>平成30年5月</td><td>第1回薄雪会山行</td><td>大菩薩嶺・ロッヂ長兵衛泊</td></tr>
+          <tr><td>平成30年11月</td><td>薄雪会総会開催</td><td>崎陽軒本店</td></tr>
+          <tr><td>令和元年7月</td><td>懇親会</td><td>俣野園（川戸先生宅）</td></tr>
+          <tr><td>令和元年9月</td><td>OB座談会開催</td><td>湘南高校歴史館</td></tr>
+          <tr><td>令和元年10月</td><td>第2回薄雪会山行</td><td>湯河原・幕山</td></tr>
+          <tr><td>令和元年11月</td><td>OB座談会開催</td><td>湘南高校歴史館</td></tr>
+          <tr><td>令和3年2月</td><td>『薄雪』復刊</td><td>2021年特別号発行</td></tr>
+          <tr><td>令和3年12月</td><td>『薄雪』創刊号〜1996年号復版発行</td><td></td></tr>
+          <tr><td>令和6年7月</td><td>現役生との懇談会</td><td>湘南高校</td></tr>
+          <tr><td>令和6年9月</td><td>夏山合宿報告会</td><td>湘南高校歴史館</td></tr>
+          <tr><td>令和7年3月</td><td>現役生との交流山行</td><td>鎌倉アルプス</td></tr>
+          <tr><td>令和7年10月</td><td>顧問の先生と懇談会</td><td>湘南高校歴史館</td></tr>
+        </tbody>
+      </table>
+    </div>
   </section>
   <section id="archive">
     <p class="kicker">Archive</p>
@@ -119,8 +144,8 @@ footer p{margin:3px}
   <section id="contact">
     <p class="kicker">Contact</p>
     <h2>お問い合わせ</h2>
-    <p>ホームページへの掲載内容や会への連絡については、薄雪会事務局までお問い合わせください。</p>
-    <p class="note">※公開用の連絡先は、事務局で確認後に掲載します。</p>
+    <p>ホームページへの掲載内容や会への連絡は、薄雪会事務局までお問い合わせください。</p>
+    <p><strong>事務局メール：</strong> <a href="mailto:usuyukikai.shac2026x@gmail.com">usuyukikai.shac2026x@gmail.com</a></p>
   </section>
 </main>
 <footer>
